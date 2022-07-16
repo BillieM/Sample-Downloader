@@ -45,10 +45,6 @@ app.post('/', (req, res) => {
         case 'youtube':
             ydl.download(req.body.id)
             break;
-    
-        case 'bandlab':
-            bandlabDl(req.body.id)
-            break;
     }
 
     res.send({
